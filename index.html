@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - RangColor: Kids Coloring Book</title>
+    <style>
+        :root {
+            --primary: #FF6B9D;
+            --secondary: #4ECDC4;
+            --accent: #FFE66D;
+            --dark: #2D3436;
+            --light: #F9FBFD;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.7;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 820px;
+            margin: 0 auto;
+            background: #FFFFFF;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            border: 1px solid #EAEAEA;
+        }
+        .header {
+            text-align: center;
+            padding-bottom: 24px;
+            border-bottom: 2px dashed #EAEAEA;
+            margin-bottom: 30px;
+        }
+        .logo { font-size: 52px; margin-bottom: 8px; }
+        h1 { color: var(--primary); font-size: 28px; margin-bottom: 8px; }
+        .last-updated { color: #888; font-size: 14px; }
+        h2 {
+            color: var(--secondary);
+            font-size: 20px;
+            margin-top: 28px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        p { margin-bottom: 16px; font-size: 16px; color: #4A4A4A; }
+        ul { margin-left: 24px; margin-bottom: 16px; }
+        li { margin-bottom: 8px; color: #4A4A4A; }
+        .highlight-box {
+            background-color: #E8F8F5;
+            border-left: 4px solid var(--secondary);
+            padding: 16px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .highlight-box strong { color: #16A085; }
+        .security-badge {
+            background-color: #FFF3CD;
+            border-left: 4px solid #FFC107;
+            padding: 16px;
+            border-radius: 8px;
+            margin: 16px 0;
+            color: #856404;
+        }
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #EAEAEA;
+            font-size: 14px;
+            color: #777;
+            text-align: center;
+        }
+        a { color: var(--secondary); text-decoration: none; font-weight: 600; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">🎨✨</div>
+            <h1>Privacy Policy</h1>
+            <p><strong>RangColor: Kids Coloring Book</strong> (Package: <code>com.rangcolor.kids</code>)</p>
+            <p class="last-updated">Effective Date: September 29, 2026</p>
+        </div>
+
+        <div class="highlight-box">
+            <strong>Summary for Parents:</strong> RangColor is designed with children's safety and privacy as our top priority. We do <strong>NOT</strong> collect, store, track, or share any personal information. The app is COPPA compliant and features child-safe, non-personalized advertising with an optional ad-free upgrade. All in-app purchases, settings, and sharing features are strictly protected behind challenging parental gates.
+        </div>
+
+        <h2>1. Introduction</h2>
+        <p>This Privacy Policy describes how RangColor ("we", "us", or "our app") protects the privacy of children (ages 3 to 8) and their families while using the RangColor mobile application on Android devices. By downloading or using RangColor, you agree to the practices outlined in this policy.</p>
+
+        <h2>2. Information We Do NOT Collect</h2>
+        <p>RangColor does <strong>NOT</strong> collect, harvest, transmit, or share any user information or device information. Specifically:</p>
+        <ul>
+            <li><strong>No Personal Identifiers:</strong> We do not collect names, email addresses, phone numbers, postal addresses, or age.</li>
+            <li><strong>No Tracking or Device IDs:</strong> We do not collect Android Advertising IDs (AAID), IMEI numbers, IP addresses, or MAC addresses.</li>
+            <li><strong>No Location Data:</strong> We do not access, request, or track coarse or precise GPS location.</li>
+            <li><strong>No Camera or Microphone Access:</strong> We do not access or record audio, video, or user media.</li>
+            <li><strong>No Accounts or Logins:</strong> Children do not need an account, username, or password to enjoy all features of RangColor.</li>
+        </ul>
+
+        <h2>3. Offline Local Storage</h2>
+        <p>All coloring activity, coloring page completion stars, unlocked artwork, and saved drawings are stored <strong>strictly locally</strong> in the app's sandboxed private storage on your own device (<code>artworks/</code> directory). We do not operate any external cloud databases or remote file servers for user drawings. Your artwork never leaves your phone or tablet without your explicit confirmation.</p>
+
+        <h2>4. Artwork Sharing & Parental Security</h2>
+        <p>RangColor allows parents to share their child's completed coloring creations to messaging and social apps (such as WhatsApp, Instagram, Facebook, or the Android system share sheet). To ensure young children cannot accidentally share content or access external apps, all sharing actions are protected by a <strong>strict dual-layer verification system</strong>:</p>
+        
+        <div class="security-badge">
+            <strong>🔒 Device Lock & Parental Gate Protection:</strong>
+            <ul style="margin-top: 8px; margin-bottom: 0;">
+                <li><strong>Native Screen Lock Verification:</strong> When the Share button is tapped, the device asks the parent to confirm their screen lock using their <strong>Fingerprint, Face Unlock, PIN, Pattern, or Password</strong>.</li>
+                <li><strong>Challenging Math Gate Fallback:</strong> If the device does not have a screen lock configured (e.g. on shared kids' tablets), the app requires solving a challenging math challenge (multiplication tables or two-digit arithmetic) with anti-brute-force question regeneration.</li>
+            </ul>
+        </div>
+
+        <p><strong>Technical Sharing Mechanics:</strong></p>
+        <ul>
+            <li>Images are shared using Android's official, secure <code>FileProvider</code> component (<code>com.rangcolor.kids.fileprovider</code>).</li>
+            <li>The app grants temporary, read-only access (<code>FLAG_GRANT_READ_URI_PERMISSION</code>) solely to the user-selected destination app.</li>
+            <li>RangColor does not log, track, or inspect your shared images, recipient lists, or social media activity.</li>
+        </ul>
+
+        <h2>5. Child-Safe Advertising & In-App Purchases</h2>
+        <ul>
+            <li><strong>Child-Safe Advertising (Google AdMob):</strong> In the free version of RangColor, family-safe advertisements are displayed via Google AdMob in strict accordance with the Google Play Designed for Families Policy and COPPA.</li>
+            <li><strong>No Behavioral Tracking / No Advertising ID (AAID):</strong> All ad requests are strictly flagged with <code>TAG_FOR_CHILD_DIRECTED_TREATMENT_TRUE</code> and maximum content rating <strong>G (General audiences)</strong>. No personalized or interest-based ads are ever served, and the Android Advertising ID (<code>AD_ID</code>) permission is explicitly disabled and excluded.</li>
+            <li><strong>Ad-Free Option & Parental Gate:</strong> Parents can permanently remove all advertisements and unlock all pages via an optional one-time in-app purchase ("Remove Ads & Unlock All"). The purchase flow is strictly protected behind a challenging parental gate to prevent accidental purchases by children.</li>
+            <li><strong>No Analytics SDKs:</strong> We do not integrate third-party analytics, behavioral tracking, or user surveillance tools.</li>
+        </ul>
+
+        <h2>6. Compliance with COPPA and Google Play Families Policy</h2>
+        <p>RangColor strictly complies with the <strong>Children's Online Privacy Protection Act (COPPA)</strong> and the <strong>Google Play Designed for Families</strong> policy requirements:</p>
+        <ul>
+            <li>We do not condition a child's participation in any activity on the disclosure of personal information.</li>
+            <li>We provide a safe, positive, and educational environment for kids aged 3 to 8.</li>
+            <li>All external sharing and settings are protected behind parental gates to prevent unauthorized interaction by young children.</li>
+        </ul>
+
+        <h2>7. Device Permissions</h2>
+        <p>RangColor requests only standard, non-sensitive permissions required by Android:</p>
+        <ul>
+            <li><strong>Internet & Network State:</strong> Standard network availability checks for loading child-safe, non-personalized advertisements and verifying in-app purchases. No personal identifiable information (PII) is transmitted over the network.</li>
+            <li><strong>No Dangerous Permissions:</strong> RangColor does not request access to contacts, call logs, device storage files outside app sandbox, location, camera, or microphone.</li>
+        </ul>
+
+        <h2>8. Changes to This Privacy Policy</h2>
+        <p>We may update our Privacy Policy from time to time to reflect improvements or regulatory requirements. Any updates will be published on this page with a revised "Effective Date". Parents are encouraged to review this page periodically.</p>
+
+        <h2>9. Contact Us</h2>
+        <p>If you have any questions, concerns, or inquiries about this Privacy Policy or our practices regarding children's privacy, please feel free to reach out to our team at:</p>
+        <p>
+            <strong>Email:</strong> <a href="mailto:rangcolor.app@gmail.com">rangcolor.app@gmail.com</a><br>
+            <strong>Developer:</strong> RangColor Team
+        </p>
+
+        <div class="footer">
+            &copy; 2026 RangColor. All rights reserved. Designed with ❤️ for kids and families.
+        </div>
+    </div>
+</body>
+</html>
