@@ -88,7 +88,7 @@
         </div>
 
         <div class="highlight-box">
-            <strong>Summary for Parents:</strong> RangColor is designed with children's safety and privacy as our top priority. We do <strong>NOT</strong> collect, store, track, or share any personal information. The app is COPPA compliant and features child-safe, non-personalized advertising with an optional ad-free upgrade. All in-app purchases, settings, and sharing features are strictly protected behind challenging parental gates.
+            <strong>Summary for Parents:</strong> RangColor is designed with children's safety and privacy as our top priority. We do <strong>NOT</strong> collect, store, track, or share any personal information. The app is COPPA compliant and features child-safe, non-personalized advertising with an optional ad-free upgrade. All in-app purchases and sharing features are strictly protected behind dual-layer security (phone screen lock / biometrics + challenging math parental gate).
         </div>
 
         <h2>1. Introduction</h2>
@@ -129,7 +129,12 @@
         <ul>
             <li><strong>Child-Safe Advertising (Google AdMob):</strong> In the free version of RangColor, family-safe advertisements are displayed via Google AdMob in strict accordance with the Google Play Designed for Families Policy and COPPA.</li>
             <li><strong>No Behavioral Tracking / No Advertising ID (AAID):</strong> All ad requests are strictly flagged with <code>TAG_FOR_CHILD_DIRECTED_TREATMENT_TRUE</code> and maximum content rating <strong>G (General audiences)</strong>. No personalized or interest-based ads are ever served, and the Android Advertising ID (<code>AD_ID</code>) permission is explicitly disabled and excluded.</li>
-            <li><strong>Ad-Free Option & Parental Gate:</strong> Parents can permanently remove all advertisements and unlock all pages via an optional one-time in-app purchase ("Remove Ads & Unlock All"). The purchase flow is strictly protected behind a challenging parental gate to prevent accidental purchases by children.</li>
+            <li><strong>Ad-Free Option & Two-Layer Security Protection:</strong> Parents can permanently remove all advertisements and unlock all pages via an optional one-time in-app purchase ("Remove Ads & Unlock All"). To prevent accidental or unauthorized purchases by children, the purchase flow is strictly protected by a <strong>mandatory two-layer security verification</strong>:
+                <ol style="margin-top: 6px; margin-left: 20px;">
+                    <li><strong>Layer 1 (Device Authentication):</strong> The parent must first authenticate using the device's native screen lock (Fingerprint, Face Unlock, PIN, Pattern, or Password).</li>
+                    <li><strong>Layer 2 (Parental Math Gate):</strong> After screen lock verification, the parent must solve a challenging math problem (multiplication or two-digit arithmetic) with anti-brute-force regeneration before the Google Play purchase screen is opened.</li>
+                </ol>
+            </li>
             <li><strong>No Analytics SDKs:</strong> We do not integrate third-party analytics, behavioral tracking, or user surveillance tools.</li>
         </ul>
 
